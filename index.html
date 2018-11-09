@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="layui/css/layui.css" media="all">
+	<link rel="stylesheet" href="css/index.css">
+	<title>首页</title>
+</head>
+<body>
+	<div class="layui-fluid contentBox">
+		<!-- 轮播图 -->
+		<div class="layui-carousel" id="carousel">
+		    <div carousel-item="">
+			    <div><img src="images/nav_1.png"></div>
+			    <div><img src="images/nav_1.png"></div>
+			    <div><img src="images/nav_1.png"></div>
+		    </div>
+		</div>
+		<!-- 关于我们介绍内容 -->
+		<div class="layui-row aboutUsBox">
+		    <div class="layui-col-xs10 layui-col-xs-offset1">
+		        <div class="layui-row aboutUs">
+					<div class="layui-col-xs8">
+						<ul class="aboutUsNews">
+							<li>
+								<span class="layui-col-xs8">We are an L-commerce company(method)</span>
+								<span class="layui-col-xs4">我们是电子商务公司</span>
+							</li>
+							<li>
+								<span class="layui-col-xs8">We are a trade company(resource)</span>
+								<span class="layui-col-xs4">我们是贸易公司</span>
+							</li>
+							<li>
+								<span class="layui-col-xs8">We are mixed company(whole chain)</span>
+								<span class="layui-col-xs4">我们是两者混合体</span>
+							</li>
+							<li>
+								<span class="layui-col-xs8">We focusing on cereal industry</span>
+								<span class="layui-col-xs4">我们专注于谷物行业</span>
+							</li>
+						</ul>
+						<ul class="layui-row">
+							<li class="layui-col-xs4"><img src="images/about1.png" alt="关于我们介绍图片1"></li>
+							<li class="layui-col-xs4"><img src="images/about2.png" alt="关于我们介绍图片2"></li>
+							<li class="layui-col-xs4"><img src="images/about3.png" alt="关于我们介绍图片3"></li>
+						</ul>
+					</div>
+					<div class="layui-col-xs4">
+						<div class="layui-col-xs9 layui-col-xs-offset2 moreBtn">
+							<img src="images/aboutUs.png">
+							<button>MORE<img src="images/more.png"></button>
+						</div>
+					</div>
+		        </div>
+		    </div>
+		</div>
+		<!-- 上下产品图片 -->
+		<div class="layui-row">
+			<div class="layui-col-xs10 layui-col-xs-offset1">
+				<div class="layui-row">
+					<img src="images/top.png" alt="产品图片">
+				</div>
+				<div class="layui-row">
+					<img src="images/bottom.png" alt="产品图片">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="layui/layui.js"></script>
+<script>
+	layui.use(['carousel'],function() {
+	    var carousel = layui.carousel;
+	    //图片轮播
+    	carousel.render({
+	        elem: '#carousel',
+	        width: '100%',
+	        height: '630px',
+	        interval: 5000
+	    });
+	});
+</script>
+</html>
