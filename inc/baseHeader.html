@@ -12,10 +12,10 @@
 <body>
     <div class="layui-fluid barBox">
         <div class="layui-row layui-col-space10">
-            <div class="layui-col-xs1">
+            <div class="layui-col-xs1 layui-col-xs-offset1 ">
                 <a href="javascript:;"><img src="../images/logo.png" alt="logo" width="92px" height="auto"></a>
             </div>
-            <div class="layui-col-xs8">
+            <div class="layui-col-xs7">
                 <ul class="layui-nav nav">
                     <li class="layui-nav-item navItem"><a href="javascript:;">首页</a></li>
                     <li class="layui-nav-item navItem"><a href="javascript:;">品牌专业</a></li>
@@ -24,7 +24,7 @@
                     <li class="layui-nav-item navItem"><a href="javascript:;">关于我们</a></li>
                 </ul>
             </div>
-            <div class="layui-col-xs3">
+            <div class="layui-col-xs2">
                 <div class="search toggleWidth">
                     <input type="text" id="searchInput" placeholder="输入关键词">
                     <i class="layui-icon layui-icon-search searchIcon"></i>
@@ -39,12 +39,10 @@
           var element = layui.element;
         });
         $(".search").on('mouseenter',function(){
-            console.log('点击');
             $(this).removeClass('toggleWidth');
             $('#searchInput').addClass('show');
         })
         $(".search").on(' mouseleave',function(){
-            console.log('点击');
             $(this).addClass('toggleWidth');
             $('#searchInput').removeClass('show');
         })

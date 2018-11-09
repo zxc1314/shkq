@@ -11,7 +11,7 @@ body{
     background-color: #fff;
 }
 .barBox .nav .navItem{
-    margin: 0 20px;
+    margin: 0 10px;
 }
 .barBox .nav .navItem a{
     color: #921733;
@@ -35,14 +35,13 @@ body{
     -o-transition: all 2s;    /* Opera */
 }
 .barBox .search:hover{
-    width:250px;
+    width:180px;
 }
 .barBox #searchInput{
     display: none;
     /* float: left; */
     position: absolute;
     margin-left: 5px;
-    width: 82%;
     height: 45px;
     border: 0;
     color: #fdf3f5;
@@ -56,6 +55,7 @@ body{
 }
 .show{
     display: inline-block!important;
+    width: 80%;
 }
 .barBox .searchIcon{
     float: right;
@@ -64,6 +64,27 @@ body{
     font-size: 35px;
     color: #fdf3f5;
 }
+.footer{
+    padding: 30px 0;
+    color: #fff;
+    background-color: #2f2f2f;
+}
+.rightInfo p{
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.phoneNum{
+    text-indent: 208px;
+}
+.leftInfo{
+    margin-top: 20px;
+}
+.rightInfo .imgIcon,.leftInfo .imgIcon{
+    width: 15px;
+    height: auto;
+}
 #searchInput::-webkit-input-placeholder { color: #fff;}
 #searchInput::-moz-placeholder { color: #fff;}
 #searchInput::-ms-input-placeholder { color: #fff;}​ 
+
