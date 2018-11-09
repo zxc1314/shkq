@@ -9,12 +9,20 @@
 <body>
 	<div class="layui-fluid contentBox">
 		<!-- 轮播图 -->
-		<div class="layui-carousel" id="carousel">
-		    <div carousel-item="">
-			    <div><img src="images/nav_1.png"></div>
-			    <div><img src="images/nav_1.png"></div>
-			    <div><img src="images/nav_1.png"></div>
-		    </div>
+		<div class="shutter">
+			<div class="shutter-img">
+				<a href="#" data-shutter-title="Iron Man"><img src="images/nav_1.png" alt="#"></a>
+				<a href="#" data-shutter-title="Super Man"><img src="images/nav_1.png" alt="#"></a>
+				<a href="#" data-shutter-title="The Hulk"><img src="images/nav_1.png" alt="#"></a>
+				<a href="#" data-shutter-title="The your"><img src="images/nav_1.png" alt="#"></a>
+			</div>
+			<ul class="shutter-btn">
+				<li class="prev"></li>
+				<li class="next"></li>
+			</ul>
+			<div class="shutter-desc">
+				<p>Iron Man</p>
+			</div>
 		</div>
 		<!-- 关于我们介绍内容 -->
 		<div class="layui-row aboutUsBox">
@@ -69,16 +77,20 @@
 </body>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="layui/layui.js"></script>
+<script src="js/velocity.js"></script>
+<script src="js/shutter.js"></script>
 <script>
-	layui.use(['carousel'],function() {
-	    var carousel = layui.carousel;
-	    //图片轮播
-    	carousel.render({
-	        elem: '#carousel',
-	        width: '100%',
-	        height: '630px',
-	        interval: 5000
-	    });
+	//轮播图
+	$(function () {
+	  $('.shutter').shutter({
+		shutterW: 1200, // 容器宽度
+		shutterH: 630, // 容器高度
+		isAutoPlay: true, // 是否自动播放
+		playInterval: 5000, // 自动播放时间
+		//curDisplay: 3, // 当前显示页
+		fullPage: false // 是否全屏展示
+	  });
 	});
+
 </script>
 </html>

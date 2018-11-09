@@ -1,13 +1,11 @@
-body {
-	width: 1200px;
-	margin: 0 auto;
-}
-/*轮播图*/
 .shutter {
   overflow: hidden;
-  width: 1200px;
+  width: 1000px;
   height: 358px;
   position: relative;
+  margin: 50px auto;
+  border-radius: 10px;
+  
 }
 .shutter-img {
   z-index: 1;
@@ -64,46 +62,4 @@ body {
   line-height: 36px;
   color: #fff;
   font-size: 14px;
-}
-/*轮播图end*/
-.contentBox {
-	padding: 0;
-}
-.aboutUsBox {
-	background-color: #931634;
-	height: 380px;
-	padding-top: 70px;
-}
-.aboutUs{
-	
-}
-.aboutUsNews li span {
-    color: #fff;
-    font-size: 17px;
-    margin-bottom: 10px;
-}
-.aboutUsNews li:last-child span {
-	margin-bottom: 30px;
-}
-.aboutUsNews li span:last-child {
-	text-indent: 1em;
-}
-.moreBtn {
-	position: relative;
-}
-.moreBtn button {
-    background-color: #DC290A;
-    border: none;
-    position: absolute;
-    bottom: 37px;
-    right: 33px;
-    width: 145px;
-    height: 50px;
-    color: #fff;
-    font-size: 20px;
-    line-height: 50px;
-}
-.moreBtn button img {
-    margin-left: 10px;
-    padding-bottom: 5px;
 }
