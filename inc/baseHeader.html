@@ -27,7 +27,7 @@
             <div class="layui-col-xs2">
                 <div class="search toggleWidth">
                     <input type="text" id="searchInput" placeholder="输入关键词">
-                    <i class="layui-icon layui-icon-search searchIcon"></i>
+                    <a href="javascript:;"><i class="layui-icon layui-icon-search searchIcon"></i></a>
                 </div>
             </div>
         </div>
@@ -39,12 +39,16 @@
           var element = layui.element;
         });
         $(".search").on('mouseenter',function(){
-            $(this).removeClass('toggleWidth');
-            $('#searchInput').addClass('show');
+            $("#searchInput").show("slow",function(){
+               $(this).removeClass('toggleWidth');
+               $(this).css('width','150px');
+               this.focus();
+            });
         })
         $(".search").on(' mouseleave',function(){
-            $(this).addClass('toggleWidth');
-            $('#searchInput').removeClass('show');
+            $("#searchInput").hide("slow",function(){
+                $(this).addClass('toggleWidth');
+            });
         })
     </script>
 </body>
