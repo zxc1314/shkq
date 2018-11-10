@@ -67,7 +67,7 @@ body {
 }
 /*轮播图end*/
 .contentBox {
-	padding: 0;
+	padding: 0!important;
 }
 .aboutUsBox {
 	background-color: #931634;
