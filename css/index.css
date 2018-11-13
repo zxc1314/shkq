@@ -103,6 +103,11 @@ body {
     font-size: 20px;
     line-height: 50px;
 }
+.moreBtn button:hover {
+    box-shadow: 0 0 10px 1px #DC290A;
+    bottom: 42px;
+    right: 28px;
+}
 .moreBtn button img {
     margin-left: 10px;
     padding-bottom: 5px;
