@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="layui/css/layui.css" media="all">
+	<link rel="stylesheet" href="css/aboutUs
+	.css">
+	<title>关于我们</title>
+</head>
+<body>
+	<div class="layui-fluid contentBox">
+		<!-- 顶部图片 -->
+		<div class="layui-row aboutTopImg">
+			<img src="images/aboutTop.png" alt="">
+		</div>
+		<!-- tab切换 -->
+		<div class="layui-row aboutTopTab">
+			<div class="layui-tab">
+				<!-- 顶部标题切换 -->
+				<div class="tabTitle layui-tab-brief">
+					<ul class="layui-tab-title">
+						<li >公司介绍</li>
+						<li>组织结构</li>
+						<li class="layui-this">联系我们</li>
+					</ul>
+				</div>
+				<!-- 切换内容 -->
+				<div class="layui-tab-content tabContent" style="height: 100px;">
+					<!-- 内容1公司介绍 -->
+					<div class="layui-tab-item ">内容不一样是要有，因为你可以监听tab事件（阅读下文档就是了）</div>
+					<!-- 内容2组织结构 -->
+					<div class="layui-tab-item">内容2</div>
+					<!-- 内容3联系我们 -->
+					<div class="layui-tab-item layui-show layui-col-xs10 layui-col-xs-offset1 contentThree">
+						<div class="layui-row contentThreeTop">
+							<p>CONTACT US</p>
+							<p>联系我们</p>
+						</div>
+						<div class="layui-row contentThreeContent">
+							<ul>
+								<li class="layui-col-xs3">
+									<p><img src="images/gsmc.png" alt=""></p>
+									<p>公司名称</p>
+									<p>Kangquan E-Commerce Tr</p>
+								</li>
+								<li class="layui-col-xs3">
+									<p><img src="images/weizhi.png" alt=""></p>
+									<p>公司地址</p>
+									<p>地址:上海市宝山区123号</p>
+									<p>Address:123,baoshan,district,Shanghai</p>
+								</li>
+								<li class="layui-col-xs3">
+									<p><img src="images/lxfs.png" alt=""></p>
+									<p>联系方式</p>
+									<p>电话: 0000-6666666</p>
+									<p>phone: 0000-6666666</p>
+								</li>
+								<li class="layui-col-xs3">
+									<p><img src="images/hzxm.png" alt=""></p>
+									<p>合作项目</p>
+									<p>更多</p>
+									<p>more</p>
+								</li>
+							</ul>
+						</div>
+						<div class="layui-row contentThreeBottom">
+							<p>如何到达公司</p>
+							<p>公交站: 6路 28路 323路 727路</p>
+							<p>欢迎您来访</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="layui/layui.js"></script>
+<script>
+	//注意：选项卡 依赖 element 模块，否则无法进行功能性操作
+	layui.use('element', function(){
+		var element = layui.element;
+
+	});
+</script>
+</html>

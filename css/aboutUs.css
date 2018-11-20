@@ -1,0 +1,106 @@
+body {
+	width: 1200px;
+	margin: 0 auto;
+}
+.contentBox {
+  padding: 0!important;
+}
+.aboutTopImg img {
+  width: 100%;
+  height: 225px;
+}
+.aboutTopTab .layui-tab {
+  margin: 0;
+}
+.aboutTopTab .tabTitle {
+  background-color: #931634;
+
+}
+.aboutTopTab .tabTitle ul {
+  width: 600px;
+  margin: 0 auto;
+  border: none;
+  height: 60px;
+}
+.aboutTopTab .layui-tab-brief>.layui-tab-title li {
+  width: 33%;
+  color: #fff;
+  height: 60px;
+  line-height: 56px;
+  font-size: 19px;
+}
+.aboutTopTab .layui-tab-brief>.layui-tab-title .layui-this {
+  background: url(../images/aboutUsBot.png) no-repeat;
+  background-position: 50px 45px;
+  background-size: 130px 7px;
+  transition: all 0s; 
+}
+.aboutTopTab .layui-tab-brief>.layui-tab-title .layui-this:after {
+  border: none;
+  border-radius: 0;
+}
+.contentThree .contentThreeTop {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.contentThree .contentThreeTop p {
+  text-align: center;
+  font-size: 21px;
+  margin-top: 15px;
+}
+.contentThree .contentThreeTop p:last-child {
+  color: #7E1E39;
+  font-weight: bold;
+}
+.contentThreeContent {
+  height: 220px;
+}
+.contentThree .contentThreeContent li {
+  background-color: #F55F82;
+  height: 215px;
+}
+
+.contentThree .contentThreeContent li:nth-child(2n) {
+  background-color: #F988A4;
+}
+.contentThree .contentThreeContent li p:first-child {
+  width: 40px;
+  height: 40px;
+  margin: 35px auto 0;
+}
+.contentThree .contentThreeContent li:hover {
+  box-shadow: 0 0 10px 1px #DC290A;
+  height: 224px;
+  background-color: #D8395F;
+  bottom: 5px;
+}
+.contentThree .contentThreeContent li p:nth-child(2) {
+  font-weight: bold;
+}
+.contentThree .contentThreeContent li p:last-child {
+  margin-top: 10px;
+}
+.contentThree .contentThreeContent li p {
+  text-align: center;
+  margin-top: 15px;
+  word-break: break-word;
+  padding: 0 15px;  
+  color: #fff; 
+  font-size: 16px;
+}
+.contentThreeBottom {
+  margin-top: 50px;
+  text-align: center;
+}
+.contentThreeBottom p:first-child {
+  font-size: 16px;
+  color: #353535;
+}
+.contentThreeBottom p {
+  font-size: 14px;
+  margin-top: 25px;
+  color: #686868;
+}
+.contentThreeBottom p:last-child {
+  margin-top: 15px;
+}
