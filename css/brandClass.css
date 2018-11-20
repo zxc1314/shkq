@@ -1,0 +1,148 @@
+body {
+	width: 1200px;
+	margin: 0 auto;
+}
+.contentBox{
+	padding: 0;
+}
+.imgTop{
+	width: 1200px;
+	height: auto;
+}
+/* tab切换 */
+.tabBox{
+	margin: 0;
+	height: 60px;
+    text-align: center !important;
+    background-color: #931634;
+} 
+.tabTitle{
+	width: 1110px;
+    margin: 0 auto;
+	border-bottom: 0;
+	height: 60px;
+}
+.tabTitle .tabTitle-item{
+	width: 49%;
+    height: 60px;
+    padding: 4px 0;
+    font-size: 16px;
+    color: #fff;
+    line-height: 26px;
+}
+.tabBox>.layui-tab-title .layui-this {
+    color: #fff;
+}
+.tabBox>.layui-tab-more li.layui-this:after, .layui-tab-brief>.layui-tab-title .layui-this:after {
+    height: 60px;
+    border: none;
+    background: url(../images/aboutUsBot.png) no-repeat bottom center /35% 10%;
+   /*  border-radius: 0;
+   border-bottom: 4px solid #f3b131; */
+}
+.tabContent{
+	padding: 20px 0;
+}
+/* 品牌分类 */
+.brandTitle{
+	margin-bottom: 5px;
+	padding: 8px 0;
+	background-color: #931634;    
+    color: #fff;
+}
+.titleText{
+	text-align: left;
+}
+.brandNav{
+	height: 888px;
+	background-color: #deb9c2;
+}
+.brandList{
+	text-align: left;
+	line-height: 60px;
+	font-size: 16px;
+}
+/* 左侧品牌折叠面板 */
+.layui-colla-icon {
+    display: none;
+}
+.collapse{
+	border: none;
+	text-align: left;
+}
+.collaTitle{
+    padding: 0 5px;
+    background-color: transparent;
+}
+.collaContent{
+	border: none;
+	padding: 0px 25px;
+}
+.collaContent p{
+	line-height: 25px;
+}
+.collapse .layui-colla-item{
+	border: none;
+}
+.translate{
+	transform:rotate(90deg);
+	-ms-transform:rotate(90deg); 	/* IE 9 */
+	-moz-transform:rotate(90deg); 	/* Firefox */
+	-webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+	-o-transform:rotate(90deg); 	/* Opera */
+}
+.translateTurn{
+	transform:rotate(270deg);
+	-ms-transform:rotate(270deg); 	/* IE 9 */
+	-moz-transform:rotate(270deg); 	/* Firefox */
+	-webkit-transform:rotate(270deg); /* Safari 和 Chrome */
+	-o-transform:rotate(270deg); 	/* Opera */	
+}
+/* 品牌介绍 */
+.brandIntro{
+	padding: 10px 0 30px;
+	border-bottom: 1px solid #eee;
+}
+.introText{
+	line-height: 20px;
+	text-align: left;
+	text-indent: 2em;
+}
+.introText .enText{
+	font-size: 12px;
+}
+/* 产品列表 */
+.proList{
+    padding: 20px 0;
+	border-bottom: 1px solid #eee;
+}
+.proList .pic{
+	width: 150px;
+	height: auto;
+}
+/* 产品简介 */
+.proContent{
+    text-align: left;
+    font-size: 15px;
+    line-height: 30px;	
+}
+.proContent .proAtt{
+	display: block;
+}
+.proContent .attName{
+	float: left;
+	display: inline-block;
+}
+.proContent .attDes{
+	display: inline-block;
+	max-width: 160px;
+	word-break: break-all;
+}
+.proContent .attDes:after{
+	content:'';
+	display: inline-block;
+	clear: both;
+}
+#page{
+	width: 715px;
+}
