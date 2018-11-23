@@ -3,70 +3,193 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="layui/css/layui.css" media="all">
-	<link rel="stylesheet" href="css/aboutUs
-	.css">
+	<link rel="stylesheet" href="css/aboutUs.css">
 	<title>关于我们</title>
 </head>
 <body>
 	<div class="layui-fluid contentBox">
-		<!-- 顶部图片 -->
-		<div class="layui-row aboutTopImg">
-			<img src="images/aboutTop.png" alt="">
-		</div>
+		<div style="width: 100%;height: 225px;"></div>
 		<!-- tab切换 -->
 		<div class="layui-row aboutTopTab">
 			<div class="layui-tab">
 				<!-- 顶部标题切换 -->
 				<div class="tabTitle layui-tab-brief">
 					<ul class="layui-tab-title">
-						<li >公司介绍</li>
-						<li>组织结构</li>
-						<li class="layui-this">联系我们</li>
+						<li class="layui-this">
+							<p>公司介绍</p>
+							<p>Company introduction</p>
+						</li>
+						<li>
+							<p>组织结构</p>
+							<p>Structure of the organization</p>
+						</li>
+						<li>
+							<p>联系我们</p>
+							<p>Contact us</p>
+						</li>
 					</ul>
 				</div>
 				<!-- 切换内容 -->
-				<div class="layui-tab-content tabContent" style="height: 100px;">
+				<div class="layui-tab-content">
 					<!-- 内容1公司介绍 -->
-					<div class="layui-tab-item ">内容不一样是要有，因为你可以监听tab事件（阅读下文档就是了）</div>
+					<div class="layui-tab-item layui-show">
+						<img src="images/companyTop.png" alt="" class="companyTop">
+						<div class="timezone"></div>
+						<div class="layui-row">
+							<div class="layui-col-xs11 layui-col-xs-offset1 companyIntroBox">
+								<div class="layui-row">
+									<p class="companyIntro">公司介绍</p>
+								</div>
+								<div class="layui-row">
+									<!-- 左边 公司简介 -->
+	                <div class="layui-col-xs4">
+                    <h2 class="who">我们是谁</h2>
+                    <div class="whoDes">
+                        <p> In China, It's hard to find a company which has two roles at same time. They are trading and e commerce. Traditional trading companies do not do e-commerce, they hire outsourcing companies to do orline usiness for them.E-commerce companies do not da trading,normally they buy goods form importers.</p>
+                        <p>在中国，很难寻找到一家企业同时具备贸易和电子商务双重角色。通常来说，贸易公司不擅长电子商务运营，他们往往会寻找电商外包企业合作。而电子商务公司也基本不从事贸易进出口，通常他们会从代理商采购货源。但是，上海康泉同时具备这两种角色，我们只做这两种角色并且不断探索和钻研。</p>
+                        <p class="whatAreWe">what are we</p>
+                    </div>
+	                </div>
+	                <!-- 右边 公司特点 -->
+	                <div class=" layui-col-xs7 layui-col-xs-offset1 time_right">
+										<div class="layui-row">
+											<div class="layui-col-xs6 companyFeature">
+												<h2>专注谷物</h2>
+												<p>focus on cereal products. we know what recipes suitable for Chinese customers.</p>
+												<p>专注谷物产品</p>
+											</div>
+											<div class="layui-col-xs6 companyFeature">
+												<h2>资深团队</h2>
+												<p>a professional e-commerce operation team. separate teams in tmall, Jingdong and so on.</p>
+												<p>专业的电子商务运营团队，分别在天猫、京东等地成立团队</p>
+											</div>
+										</div>
+										<div class="layui-row">
+											<div class="layui-col-xs6 companyFeature">
+												<h2>自主运营</h2>
+												<p>Kangquan has these two roles together, we are an e-commerce trade company.</p>
+												<p>康泉把这两个角色放在一起，我们是一家电子商务贸易公司。</p>
+											</div>
+											<div class="layui-col-xs6 companyFeature">
+												<h2>良好资源</h2>
+												<p>we have tight relationship with the most online platforms in China.</p>
+												<p>我们与中国大多数的在线平台有着紧密的联系。</p>
+											</div>
+										</div>
+	                </div>
+	              </div>
+	              <!-- 第二块 左边 -->
+	              <div class="layui-row">
+						      <div class="layui-col-xs4  layui-col-xs-offset2">
+                    <div class="leftPic">
+											<img src="images/com_1.png" alt="">
+                    </div>
+	                </div>
+								</div>
+								<div class="layui-row">
+									<div class="layui-col-xs3 leftText">
+		              	<div class="time"></div>
+	                  <p>期初我们是一家纯电商公司</p>
+	                  <p>At the beginning, we are a pure e-commerce company</p>
+									</div>
+                </div>
+	              <!-- 第三块 右边 -->
+	              <div class="layui-row">
+						      <div class="layui-col-xs4  layui-col-xs-offset6">
+                    <div class="leftPic">
+											<img src="images/com_2.png" alt="">
+                    </div>
+	                </div>
+								</div>
+								<div class="layui-row">
+									<div class="layui-col-xs5  layui-col-xs-offset7 leftText">
+		              	<div class="time timeRight"></div>
+	                  <p>意识到货源的重要性，便开始了从欧洲进口食品</p>
+	                  <p>Realizing the importance of the source of goods, they beganto import food from Europe</p>
+									</div>
+                </div>
+	              <!-- 第四块 左边 -->
+	              <div class="layui-row">
+						      <div class="layui-col-xs4  layui-col-xs-offset2">
+                    <div class="leftPic">
+											<img src="images/com_3.png" alt="">
+                    </div>
+	                </div>
+								</div>
+								<div class="layui-row">
+									<div class="layui-col-xs3 leftText">
+		              	<div class="time"></div>
+	                  <p>接着我们拓宽了电商渠道</p>
+	                  <p>Then we expanded the channel of e-commerce</p>
+									</div>
+                </div>
+							</div>
+						</div>
+					</div>
 					<!-- 内容2组织结构 -->
-					<div class="layui-tab-item">内容2</div>
+					<div class="layui-tab-item">
+						<img src="images/structure_banner.png" alt="" class="companyTop">
+						<div class="layui-row">
+							<div class="layui-col-xs10 layui-col-xs-offset1">
+								<div class="layui-row structureTitle">
+									<p class="displayTitle">组织结构展示</p>
+									<p>Organizational structure display</p>
+								</div>
+								<div class="layui-row structureIntro">
+									<p> We are the direct supplier of Tmall Supermarket and Jingdong Supermarket in China's two largest home appliance platforms; we are familiar with the operating modes of these two platforms and the good relationship between buildings.  Today, we have good cooperation with major e-commerce platforms in China, and we have completed nearly 90% of e-commerce platform deployment, with strong e-commerce operation capabilities and rich experience. At the same time, we are committed to promoting high-quality overseas brands to the Chinese market, using our network-wide e-commerce platform and powerful offline resources to enable Chinese consumers to understand our products faster and more accurately.  In the future, we will focus on long-term cooperation and strategic thinking with the brand, and use our ability to understand the Chinese market to bring healthy and quality life to thousands of households in China.</p>
+									<p>我们是中国最大两家电商平台——天猫超市和京东超市的直接供货商户；我们熟悉这两大平台的运营模式以及构建良好的关系。时至今日，我们和中国各大电商平台都有良好的合作关系，完成了近90%的电商平台铺设，有着强大的电商运营能力和丰富经验。同时，我们致力于将优质的海外品牌推广到中国市场，利用我们全网络的电商平台及强大的商超等线下资源，让中国消费者更快更精准的了解我们的产品。在未来，我们着眼于品牌的长远合作和战略性思考，利用我们了解中国市场的能力，将健康优质的生活带到中国。</p>
+								</div>
+								<div class="layui-row structurePic">
+									<img src="images/structure_1.png" alt="">
+									<img src="images/structure_2.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
 					<!-- 内容3联系我们 -->
-					<div class="layui-tab-item layui-show layui-col-xs10 layui-col-xs-offset1 contentThree">
-						<div class="layui-row contentThreeTop">
-							<p>CONTACT US</p>
-							<p>联系我们</p>
-						</div>
-						<div class="layui-row contentThreeContent">
-							<ul>
-								<li class="layui-col-xs3">
-									<p><img src="images/gsmc.png" alt=""></p>
-									<p>公司名称</p>
-									<p>Kangquan E-Commerce Tr</p>
-								</li>
-								<li class="layui-col-xs3">
-									<p><img src="images/weizhi.png" alt=""></p>
-									<p>公司地址</p>
-									<p>地址:上海市宝山区123号</p>
-									<p>Address:123,baoshan,district,Shanghai</p>
-								</li>
-								<li class="layui-col-xs3">
-									<p><img src="images/lxfs.png" alt=""></p>
-									<p>联系方式</p>
-									<p>电话: 0000-6666666</p>
-									<p>phone: 0000-6666666</p>
-								</li>
-								<li class="layui-col-xs3">
-									<p><img src="images/hzxm.png" alt=""></p>
-									<p>合作项目</p>
-									<p>更多</p>
-									<p>more</p>
-								</li>
-							</ul>
-						</div>
-						<div class="layui-row contentThreeBottom">
-							<p>如何到达公司</p>
-							<p>公交站: 6路 28路 323路 727路</p>
-							<p>欢迎您来访</p>
+					<div class="layui-tab-item contactUs">
+						<img src="images/aboutTop.png" alt=""  class="companyTop">
+						<div class="layui-col-xs8 layui-col-xs-offset2 contentThree">
+							<div class="layui-row contentThreeTop">
+								<p>CONTACT US</p>
+								<p>联系我们</p>
+							</div>
+							<div class="layui-row contentThreeContent">
+								<ul>
+									<li class="layui-col-xs4">
+										<p><img src="images/gsmc.png" alt=""></p>
+										<p>公司名称</p>
+										<p class="enName">name of company</p>
+										<p>Kangquan E-Commerce Tr</p>
+										<p>上海康泉电子商务有限公司</p>
+									</li>
+									<li class="layui-col-xs4">
+										<p><img src="images/weizhi.png" alt=""></p>
+										<p>公司地址</p>
+										<p class="enName">company address</p>
+										<p>地址:上海市宝山区松兴西路76号H楼第二层H207</p>
+										<p>Address:76, Songxingxi rood, baoshan district, Shanghai</p>
+									</li>
+									<li class="layui-col-xs4">
+										<p><img src="images/lxfs.png" alt=""></p>
+										<p>联系方式</p>
+										<p class="enName">contact way</p>
+										<p>邮箱: george.xu@kangquansh.com</p>
+										<p>E-mail: george.xu@kangquansh.com</p>
+									</li>
+									<!-- <li class="layui-col-xs3">
+										<p><img src="images/hzxm.png" alt=""></p>
+										<p>合作项目</p>
+										<p>更多</p>
+										<p>more</p>
+									</li> -->
+								</ul>
+							</div>
+							<div class="layui-row contentThreeBottom">
+								<p>如何到达公司</p>
+								<p>公交站: 6路 28路 323路 727路</p>
+								<p>欢迎您来访</p>
+							</div>
 						</div>
 					</div>
 				</div>

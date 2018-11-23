@@ -7,11 +7,11 @@
 	<link rel="stylesheet" href="css/brandClass.css">
 </head>
 <body>
-	<div class="layui-fluid contentBox">
+	<div class="layui-fluid contentBox clear">
 		<img src="images/banner.png" alt="背景图片" class="imgTop">
 		<!-- tab切换 -->
-		<div class="layui-tab layui-tab-brief tabBox" lay-filter="docDemoTabBrief">
-		  <ul class="layui-tab-title tabTitle">
+		<div class="layui-tab layui-tab-brief clear" lay-filter="docDemoTabBrief">
+		  <ul class="layui-tab-title tabBox clear">
 		    <li class="layui-this tabTitle-item">
 		    	<p>品牌分类</p>
 		    	<p>Brand classification</p>
@@ -21,14 +21,14 @@
 		    	<p>video promotion</p>
 		    </li>
 		  </ul>
-		  <div class="layui-tab-content tabContent">
+		  <div class="layui-tab-content tabContent clear">
 		  	<!-- 品牌分类内容 -->
 				<div class="layui-tab-item layui-show layui-row">
 					<!-- 左边导航 -->
-				 	<div class="layui-col-xs2 layui-col-xs-offset1">
+				 	<div class="layui-col-xs2 layui-col-xs-offset1 leftNav">
 				 		<!-- 品牌分类 -->
 						<div class="layui-row brandTitle">
-							<div class="layui-col-xs4">
+							<div class="layui-col-xs3 layui-col-xs-offset1">
 								<img src="images/menu.png" alt="menu">
 							</div>
 							<div class="layui-col-xs8 layui-col-space10">
@@ -39,43 +39,20 @@
 						<!-- 折叠面板 -->
 						<div class="brandNav layui-row">
 							<div class="layui-col-xs9 layui-col-xs-offset1">
-								<div class="layui-collapse collapse" lay-accordion>
-								  <div class="layui-colla-item">
-								    <h2 class="layui-colla-title collaTitle">
-								    	<img src="images/dropdown.png" alt="menu">&emsp;ICA
-								    </h2>
-								    <div class="layui-colla-content collaContent">
-								    	<p><a href="javascript:;">麦片</a></p>
-											<p><a href="javascript:;">咖啡</a></p>
-											<p><a href="javascript:;">巧克力</a></p>
-								    </div>
-								  </div>
-								  <div class="layui-colla-item">
-								    <h2 class="layui-colla-title collaTitle">
-								    	<img src="images/dropdown.png" alt="menu">&emsp;HAHNE
-								    </h2>
-								    <div class="layui-colla-content collaContent">
-								    	<p><a href="javascript:;">麦片</a></p>
-								    	<p><a href="javascript:;">麦片</a></p>
-								    	<p><a href="javascript:;">麦片</a></p>
-								    </div>
-								  </div>
-								  <div class="layui-colla-item">
-								    <h2 class="layui-colla-title collaTitle">
-								    	<img src="images/dropdown.png" alt="menu">&emsp;freedom
-								    </h2>
-								    <div class="layui-colla-content collaContent">
-								    	<p><a href="javascript:;">麦片</a></p>
-								    	<p><a href="javascript:;">麦片</a></p>
-								    	<p><a href="javascript:;">麦片</a></p>
-								    </div>
-								  </div>
-								</div>
+						    <h2 class=" collaTitle clear">
+						    	<img src="images/dropdown.png" alt="menu">&emsp;ICA
+						    </h2>
+						    <h2 class=" collaTitle clear">
+						    	<img src="images/dropdown.png" alt="menu">&emsp;HAHNE
+						    </h2>
+						    <h2 class=" collaTitle">
+						    	<img src="images/dropdown.png" alt="menu">&emsp;freedom
+						    </h2>
 							</div>
 						</div>
 				 	</div>
 				 	<!-- 右边正文 -->
-					<div class="layui-col-xs7 layui-col-xs-offset1">
+					<div class="layui-col-xs7 layui-col-xs-offset1 rightList">
 						<!-- 品牌简介 -->
 						<div class="layui-row brandIntro">
 							<div class="layui-col-xs3">
@@ -239,7 +216,7 @@
 										</p>
 										<p class="proAtt">
 											<span class="attName">产品介绍：</span>
-											<span class="attDes">瑞士麦巧克力夹心麦片</span>
+											<span class="attDes">瑞士麦巧克力夹心麦片，瑞士麦巧克力夹心麦片，瑞士麦巧克力夹心麦片，瑞士麦巧克力夹心麦片瑞士麦巧克力夹心麦片瑞士麦巧克力夹心麦片瑞士麦巧克力夹心麦片瑞士麦巧克力夹心麦片瑞士麦巧克力夹心麦片瑞士麦巧克力夹心麦片瑞士麦巧克力夹心麦片瑞士麦巧克力夹心麦片瑞士麦巧克力夹心麦片瑞士麦巧克力夹心麦片瑞士麦巧克力夹心麦片瑞士麦巧克力夹心麦片瑞士麦巧克力夹心麦片瑞士麦巧克力夹心麦片</span>
 										</p>
 										<p class="proAtt">
 											<span class="attName">Product introduction: </span>
@@ -254,7 +231,7 @@
 				</div>
 				<!-- 视频推广 -->
     		<div class="layui-tab-item">
-					<div class="layui-row ">
+					<div class="layui-row layui-col-xs-offset1">
 						<div class="layui-col-xs3">
 							<video src="video/testVideo.mp4"  controls="controls" height="200px;"></video>
 							<p>视频推广 阿迪斯 jfdoa</p>
@@ -297,11 +274,21 @@
 	});
 </script>
 <script>
+ // 设置左边导航高度和右边列表一致 
+$(function(){
+	var rightHeight = $('.rightList').height();
+	$('.brandNav').height(rightHeight);
+});
+</script>
+<!-- 
+// 左侧折叠
+<script>
 	$(function(){
 		$('.collaTitle').on('click',function(){
 			$(this).find("img").toggleClass('translate');
 			$(this).parent().siblings().find("img").removeClass('translate');
 		});
 	});
-</script>
+</script> 
+-->
 </html>

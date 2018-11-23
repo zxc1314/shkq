@@ -1,0 +1,73 @@
+body {
+	width: 1200px;
+	margin: 0 auto;
+}
+.contentBox{
+	padding: 0 !important;
+}
+.contentBox .imgTop{
+	width: 1200px;
+	height: auto;
+}
+.contentBox .tabBox{
+	margin: 0;
+	margin-bottom: 40px;
+    padding: 4px 0;
+	height: 52px;
+    line-height: 26px;
+    text-align: center !important;
+    background-color: #931634;
+    font-size: 16px;
+    color: #fff;
+} 
+.recruiteList{
+    margin-bottom: 10px;
+    line-height: 26px;
+	border-bottom: 1px solid #eee;
+	font-size: 16px;
+}
+.recruiteList .recruiteTitle{
+    padding: 10px 0;
+	border-bottom: 1px solid #eee;
+}
+.recruiteList .recruiteTitle h2{
+	font-size: 25px;
+    line-height: 60px;
+}
+.recruiteList .recruiteTitle p{
+	font-size: 13px;
+    line-height: 30px;
+    color: #a3afb7;
+}
+.recruiteTitle p img{
+	display: inline-block;
+    margin: -3px 7px 0;
+	width: 18px;
+
+}
+.recruiteList .recruiteItem{
+	padding: 20px;
+}
+.recruiteList .recruiteItem .request{
+	margin-bottom: 15px;
+}
+.recruiteList .recruiteRight{
+    border-left: 1px solid #eee;
+    margin: 25px 0 0;
+    line-height: 36px;
+}
+.contactBox .contactWay{
+	font-weight: bold;
+}
+.recruiteRight .contactBox img{
+	width: 23px;
+	height: auto;
+}
+.recruiteRight{
+	background: url(../images/zhaopin.png) no-repeat 100%/96%;
+    background-position: 20px 80%;
+}
+/* .recruiteRight .recruitePic img{
+	width: 480px;
+	height: auto;
+} */

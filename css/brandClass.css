@@ -5,6 +5,16 @@ body {
 .contentBox{
 	padding: 0;
 }
+.clear:after{
+	content:'';
+	display: block;
+	visibility: hidden;
+	clear: both;
+	height:0
+}
+.clear{
+	zoom: 1;
+}
 .imgTop{
 	width: 1200px;
 	height: auto;
@@ -13,6 +23,7 @@ body {
 .tabBox{
 	margin: 0;
 	height: 60px;
+	margin-top: -10px;
     text-align: center !important;
     background-color: #931634;
 } 
@@ -22,7 +33,7 @@ body {
 	border-bottom: 0;
 	height: 60px;
 }
-.tabTitle .tabTitle-item{
+.contentBox .tabTitle-item{
 	width: 49%;
     height: 60px;
     padding: 4px 0;
@@ -30,10 +41,10 @@ body {
     color: #fff;
     line-height: 26px;
 }
-.tabBox>.layui-tab-title .layui-this {
+.contentBox .layui-tab-brief >.layui-tab-title .layui-this {
     color: #fff;
 }
-.tabBox>.layui-tab-more li.layui-this:after, .layui-tab-brief>.layui-tab-title .layui-this:after {
+.contentBox>.layui-tab-more li.layui-this:after, .layui-tab-brief>.layui-tab-title .layui-this:after {
     height: 60px;
     border: none;
     background: url(../images/aboutUsBot.png) no-repeat bottom center /35% 10%;
@@ -56,6 +67,9 @@ body {
 .brandNav{
 	height: 888px;
 	background-color: #deb9c2;
+	text-align: left;
+	line-height: 60px;
+	font-size: 12px;
 }
 .brandList{
 	text-align: left;
@@ -63,27 +77,27 @@ body {
 	font-size: 16px;
 }
 /* 左侧品牌折叠面板 */
-.layui-colla-icon {
+/* .layui-colla-icon {
     display: none;
-}
-.collapse{
+} */
+/* .collapse{
 	border: none;
 	text-align: left;
-}
+} */
 .collaTitle{
     padding: 0 5px;
     background-color: transparent;
 }
-.collaContent{
+/* .collaContent{
 	border: none;
 	padding: 0px 25px;
 }
 .collaContent p{
 	line-height: 25px;
-}
-.collapse .layui-colla-item{
+} */
+/* .collapse .layui-colla-item{
 	border: none;
-}
+} */
 .translate{
 	transform:rotate(90deg);
 	-ms-transform:rotate(90deg); 	/* IE 9 */
@@ -136,7 +150,7 @@ body {
 .proContent .attDes{
 	display: inline-block;
 	max-width: 160px;
-	word-break: break-all;
+	word-break: break-word;
 }
 .proContent .attDes:after{
 	content:'';
