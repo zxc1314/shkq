@@ -56,10 +56,11 @@ body {
 }
 /* 品牌分类 */
 .brandTitle{
-	margin-bottom: 5px;
-	padding: 8px 0;
 	background-color: #931634;    
     color: #fff;
+}
+.brandTitle img {
+	width: 100%;
 }
 .titleText{
 	text-align: left;
@@ -70,6 +71,15 @@ body {
 	text-align: left;
 	line-height: 60px;
 	font-size: 12px;
+}
+.brandNav .collaTitle {
+	padding-left: 40px;
+}
+.brandNav .collaTitleShow {
+	background-color: #931634;
+	border-left: 15px solid #000;
+    padding-left: 25px;
+    color: #fff;
 }
 .brandList{
 	text-align: left;
