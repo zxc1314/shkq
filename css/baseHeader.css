@@ -6,6 +6,9 @@ body{
     padding: 0;
     margin: 35px auto 20px;
 }
+.barBox .imgBox{
+    margin-left: 65px;;;;
+}
 .barBox .nav{
     margin-top: 6px;
     background-color: #fff;
@@ -16,6 +19,12 @@ body{
 .barBox .nav .navItem a{
     color: #921733;
     font-size: 18px;
+}
+.barBox .nav .navItem a p{
+    height: 35px;;;;
+    line-height: 35px;;;;
+    text-align: center;;;;
+    font-size: 17px;;;;
 }
 .barBox .nav .layui-this:after, .barBox .layui-nav-bar,.barBox .layui-nav-tree .layui-nav-itemed:after{
     background-color: #efcf18;
@@ -29,14 +38,14 @@ body{
     height: 45px;
     border-radius: 30px;
     background-color: #921733;
-    transition: all 2s;
-    -moz-transition: all 2s;  /* Firefox 4 */
-    -webkit-transition: all 2s;   /* Safari 和 Chrome */
-    -o-transition: all 2s;    /* Opera */
+    transition: all 1s;
+    -moz-transition: all 1s;  /* Firefox 4 */
+    -webkit-transition: all 1s;   /* Safari 和 Chrome */
+    -o-transition: all 1s;    /* Opera */
 }
-.barBox .search:hover{
+/* .barBox .search:hover{
     width:190px;
-}
+} */
 .barBox #searchInput{
     display: none;
     position: absolute;
@@ -44,7 +53,7 @@ body{
     height: 45px;
     border: 0;
     color: #fdf3f5;
-    text-align: center;
+    text-align: left;
     font-size: 16px;
     background-color: transparent;
 }
@@ -72,7 +81,7 @@ body{
     margin-bottom: 10px;
 }
 .phoneNum{
-    text-indent: 208px;
+    text-indent: 227px;;;;
 }
 .leftInfo{
     margin-top: 20px;

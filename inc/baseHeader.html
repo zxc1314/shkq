@@ -11,22 +11,46 @@
 </head>
 <body>
     <div class="layui-fluid barBox">
-        <div class="layui-row layui-col-space10">
-            <div class="layui-col-xs1 layui-col-xs-offset1 ">
+        <div class="layui-row">
+            <div class="layui-col-xs1 imgBox">
                 <a href="javascript:;"><img src="../images/logo.png" alt="logo" width="92px" height="auto"></a>
             </div>
-            <div class="layui-col-xs7">
+            <div class="layui-col-xs8">
                 <ul class="layui-nav nav">
-                    <li class="layui-nav-item navItem"><a href="javascript:;">首页</a></li>
-                    <li class="layui-nav-item navItem"><a href="javascript:;">品牌专业</a></li>
-                    <li class="layui-nav-item navItem"><a href="javascript:;">核心优势</a></li>
-                    <li class="layui-nav-item navItem"><a href="javascript:;">招贤纳士</a></li>
-                    <li class="layui-nav-item navItem"><a href="javascript:;">关于我们</a></li>
+                    <li class="layui-nav-item navItem">
+                        <a href="javascript:;">
+                            <p>首页</p><p>kangquan</p>
+                        </a>
+                    </li>
+                    <li class="layui-nav-item navItem">
+                        <a href="javascript:;">
+                            <p>合作品牌</p>
+                            <p>Collaboration</p>
+                        </a>
+                    </li>
+                    <li class="layui-nav-item navItem">
+                        <a href="javascript:;">
+                            <p>核心优势</p>
+                            <p>Core Advantage</p>
+                        </a>
+                    </li>
+                    <li class="layui-nav-item navItem">
+                        <a href="javascript:;">
+                            <p>招贤纳士</p>
+                            <p>Join Us</p>
+                        </a>
+                    </li>
+                    <li class="layui-nav-item navItem">
+                        <a href="javascript:;">
+                            <p>关于我们</p>
+                            <p>About Us</p>
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="layui-col-xs2">
                 <div class="search toggleWidth">
-                    <input type="text" id="searchInput" placeholder="输入关键词">
+                    <input type="text" id="searchInput" placeholder="请输入搜索关键词">
                     <a href="javascript:;"><i class="layui-icon layui-icon-search searchIcon"></i></a>
                 </div>
             </div>
@@ -39,17 +63,23 @@
           var element = layui.element;
         });
         $(".search").on('mouseenter',function(){
-            $("#searchInput").show("slow",function(){
-               $(this).removeClass('toggleWidth');
-               $(this).css('width','150px');
-               this.focus();
-            });
-        })
-        $(".search").on(' mouseleave',function(){
-            $("#searchInput").hide("slow",function(){
-                $(this).addClass('toggleWidth');
-            });
-        })
+            // setTimeout(function () {
+                $(".search").css('width','190px');
+                $("#searchInput").show("500",function(){
+                   $(this).removeClass('toggleWidth');
+                   $(this).css('width','150px');
+                   this.focus();
+                });
+            // }, 0);
+        });
+        $(".search").on('mouseleave',function(){
+            // setTimeout(function () {
+                $(".search").css('width','32px');
+                $("#searchInput").hide("500",function(){
+                    $(this).addClass('toggleWidth');
+                });
+            // }, 0);
+        });
     </script>
 </body>
 </html>
