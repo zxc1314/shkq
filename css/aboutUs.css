@@ -14,7 +14,7 @@ body {
 }
 .aboutTopTab .tabTitle {
   background-color: #931634;
-  margin-bottom: 40px;;;;
+  margin-bottom: 40px;
 }
 .aboutTopTab .tabTitle ul {
   /* width: 600px; */
@@ -24,8 +24,8 @@ body {
 }
 .aboutTopTab .layui-tab-brief>.layui-tab-title li {
   /*width: 33%;*/
-  width: 18.8%;;;;
-  margin: 5px 6%;;;;
+  width: 18.8%;
+  margin: 5px 6%;
   color: #fff;
   height: 60px;
   padding-top: 6px;
@@ -46,8 +46,8 @@ body {
   overflow: hidden;
 }
 .contentThree{
-  padding-top: 15px;;;;
-  padding-bottom: 50px;;;;
+  padding-top: 15px;
+  padding-bottom: 50px;
 }
 .contentThree .contentThreeTop {
   margin-top: 30px;
@@ -67,7 +67,7 @@ body {
 }
 .contentThree .contentThreeContent li {
   background-color: #F55F82;
-  height: 345px;;;;
+  height: 345px;
 }
 
 .contentThree .contentThreeContent li:nth-child(2n) {
@@ -76,14 +76,14 @@ body {
 .contentThree .contentThreeContent li p:first-child {
   width: 40px;
   height: 40px;
-  margin: 80px auto 0;;;;
+  margin: 80px auto 0;
 }
 .contentThree .contentThreeContent li:hover {
   box-shadow: 0 0 10px 1px #DC290A;
-  height: 355px;;;;
+  height: 355px;
   background-color: #D8395F;
   bottom: 5px;
-  z-index: 1;;;;
+  z-index: 1;
 }
 .contentThree .contentThreeContent li p:nth-child(2) {
   font-weight: bold;
@@ -142,15 +142,15 @@ body {
     font-weight: 600;
 }
 .whoDes{
-    font-size: 14px;;;;
+    font-size: 14px;
     text-indent: 2em;
     line-height: 30px;
 }
 .whoDes .whatAreWe{
     text-indent: 0;
     letter-spacing: -2px;
-    font: italic 600 35px/38px cursive;;;;
-    margin-bottom: 30px;;;;
+    font: italic 600 35px/38px cursive;
+    margin-bottom: 30px;
 }
 /* 时间轴 */
 .timezone{
@@ -211,25 +211,29 @@ body {
     }
 }
 .time_right{
-    width: 546px;;;;
-    margin-left: 10%;;;;
-    padding: 20px 20px 15px 25px;;;;
+    width: 546px;
+    margin-left: 10%;
+    padding: 20px 20px 15px 25px;
     background-color: #951136;
     -webkit-transition: all 2s;
     -webkit-animation: showIn 2s ease;
 }
 .companyFeature{
-    width: 220px;;;;
-    height: 180px;;;;
-    margin: 15px;;;;
+    /*width: 220px;
+    height: 180px;*/
+    /*margin: 15px 0;*/
+    margin-bottom: 15px;
 }
 .companyFeature h2{
     color: #fff;
-    font: 600 30px/80px sans-serif;
+    font: 600 30px/50px sans-serif;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 14px;
+    width: 188px;
 }
 .companyFeature p{
     color: #ffc5c6;
-    font-size: 14px;;;;
+    font-size: 14px;
 }
 .leftPic{
   margin: 60px 0px 20px -38px;

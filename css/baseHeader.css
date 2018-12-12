@@ -7,7 +7,7 @@ body{
     margin: 35px auto 20px;
 }
 .barBox .imgBox{
-    margin-left: 65px;;;;
+    margin-left: 65px;
 }
 .barBox .nav{
     margin-top: 6px;
@@ -21,10 +21,10 @@ body{
     font-size: 18px;
 }
 .barBox .nav .navItem a p{
-    height: 35px;;;;
-    line-height: 35px;;;;
-    text-align: center;;;;
-    font-size: 17px;;;;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 17px;
 }
 .barBox .nav .layui-this:after, .barBox .layui-nav-bar,.barBox .layui-nav-tree .layui-nav-itemed:after{
     background-color: #efcf18;
@@ -81,7 +81,7 @@ body{
     margin-bottom: 10px;
 }
 .phoneNum{
-    text-indent: 227px;;;;
+    text-indent: 227px;
 }
 .leftInfo{
     margin-top: 20px;

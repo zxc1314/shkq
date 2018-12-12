@@ -24,15 +24,15 @@ body {
 	margin: 20px auto;
 }
 .contentBox .picAndText .coreImg{
-	width: 583px;;;;
+	width: 583px;
 	height: auto;
 }
 .contentBox .picAndText .introText{
-    margin-top: 100px;;;;
+    margin-top: 100px;
     padding: 0 20px;
-    line-height: 29px;;;;
-    font-size: 18px;;;;
-    /* text-indent: 2em; */;;;
+    line-height: 29px;
+    font-size: 18px;
+    /* text-indent: 2em; */
     word-break: break-word;
     color: #931634;
 }
